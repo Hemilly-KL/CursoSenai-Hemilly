@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax Gif</title>
+    <style>
+       body, html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+       }
+       .cabe{
+        width: 100%;
+        height: 100px;
+        background-color: #f8ddce;
+       }
+       input{
+        width: 20%;
+        height: 30px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        border: solid rgb(1, 1, 1) 1.5px;
+        border-radius: 10px;
+        background-image: url(Imagens/Lupinha.png);
+        background-size: 10%;
+        background-repeat: no-repeat;
+        background-position: top 5px right 10px;
+        margin-top: 30px;
+        margin-right: 20px;
+        float: right;
+       }
+       .logo{
+        float: left;
+        text-indent: 20px;
+        width: 20%;
+       }
+       .cabe ul{
+        float: left;
+        width: 50%;
+        margin: 0px 0px 0px 20px;
+        line-height: 100px;
+        text-align: center;
+       }
+       .cabe ul li{
+        text-decoration: none;
+        display: inline;
+        padding: 20px;
+        color:  rgb(13, 66, 13);
+        font-family: 1.5em;
+        cursor: pointer;
+       }
+       .cabe ul li :hover{
+        color: rgb(25, 121, 25);
+       }
+       .box1, .box2, .box3, .box4{
+        position: relative;
+        height: 100%;
+   
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+       }
+       .box1{
+        background-image: url(Imagens/Gif.gif);
+       }
+       .box2{
+        background-image: url(Imagens/Natureza.jpg);
+       }
+       .box3{
+        background-image: url(Imagens/Natureza2.png);
+       }
+       .box4{
+        background-image: url(Imagens/Natureza3.png);
+       }
+       .cont-img{
+        position: absolute;
+        top: 45%;
+        width: 100%;
+        text-align: center;
+       }
+       .cont-img span.titulo{
+        background-color: rgb(242, 63, 3);
+        color: #ffffff;
+        padding: 20px;
+        font-size: 20px;
+        letter-spacing: 5px;
+       }
+       .conteudo{
+        background-color: #e3e8dd;
+        color: rgb(13, 66, 13);
+        text-align: justify;
+        padding: 50px 100px 40px 100px;
+        background-image: url(Imagens/Logo2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+       }
+       h2{
+        text-transform: uppercase;
+        color: rgb(13, 66, 13);
+        text-align: center;
+       }
+       .roda{
+        margin-top: -20px;
+        height: 330px;
+        background-color: #e3e8dd;
+       }
+       .roda .down_up{
+        text-align: center;
+        color: rgb(13, 66, 13);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+        font-size: 4em;
+       }
+       .roda .down_meio{
+        text-align: center;
+        color: rgb(13, 66, 13);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+        font-size: 1.5em;
+        text-align: center;
+       }
+       .roda .down_down{
+        text-align: center;
+       }
+       .roda .down_down img{
+        width: 40px;
+        border-radius: 25px;
+        border: 4px rgb(13, 66, 13) dotted;
+        cursor: pointer;
+        margin: 20px;
+        padding: 5px; 
+       }
+    </style>
+</head>
+<body>
+    <div class="cabe">
+        <div class="logo">
+            <img src="Imagens/Logo3.svg" width="70px" style="margin-top: 10px;">
+        </div>
+        <div>
+            <ul>
+                <li>HOME</li>
+                <li>SERVIÇOS</li>
+                <li>PRODUTOS</li>
+                <li>SOBRE</li>
+            </ul>
+        </div>
+        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar" style="text-indent: 10px;">
+    </div>
+    <div class="box1">
+        <div class="cont-img">
+            <span class="titulo">A NATUREZA É BELA</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti velit nihil commodi nisi, veritatis temporibus eligendi nostrum culpa fugiat, a sequi ducimus porro repudiandae nesciunt nobis doloremque consectetur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis eos recusandae itaque saepe officiis voluptates quidem tenetur, distinctio consequuntur illum reiciendis veniam sint. Tempore necessitatibus iusto ut repudiandae cupiditate?</p>
+    </div>
+    <div class="box2">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É VIVA</span>
+        </div>
+    </div>
+</body>
+</html>

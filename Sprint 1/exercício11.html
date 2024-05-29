@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <style>
+        .Tsim {
+            text-align: justify;
+            margin-left: 375px;
+            margin-right: 375px;
+        }
+
+        .Tcla {
+            width: 70%;
+            margin: auto;
+            display: block;
+        }
+
+        .Bim {
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="Tsim">
+        <h1 class="Bim">FORMULÁRIO DE DENÚNCIAS</h1>
+        <img src="Imagens/maus-tratos.jpg" alt="Imagem 1" width="600" class="Tcla">
+        <p>Aproveite esse espaço para denunciar maus-tratos e abandono que você presenciou próximos a gente para
+            podermos ajudar esse animalzinho</p>
+    </header>
+
+    <hr>
+
+    <main class="Tsim">
+        <section>
+            <h3>PREENCHA ESSE FOMULÁRIO</h3>
+            <p>Preencha os campos abaixo com todas as suas informações e as informações do animalzinho para podermos
+                resgatá-lo!</p>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label>Nome</label><br>
+                    <input type="text" name="Nome" placeholder="Digite seu nome" required>
+                    <br>
+                    <br>
+                    <label>Telefone</label>
+                    <input type="tel" name="Contato" placeholder="(XX) XXXXX-XXXX" required>
+                    <br>
+                    <br>
+                    <label>Sua Cidade</label>
+                    <select name="Cidade" required>
+                        <option value="">Escolha sua cidade</option>
+                        <optgroup label="São Paulo">
+                            <option value="Santa Cruz do Rio Pardo">Santa Cruz do Rio Pardo</option>
+                            <option value="Ourinhos">Ourinhos</option>
+                            <option value="São Pedro do Turvo">São Pedro do Turvo</option>
+                            <option value="Espírito Santo do Turvo">Espírito Santo do Turvo</option>
+                        </optgroup>
+                        <optgroup label="Paraná">
+                            <option value="Cornélio Procópio">Cornélio Procópio</option>
+                            <option value="Londrina">Londrina</option>
+                            <option value="Jacarezinho">Jacarezinho</option>
+                            <option value="Curitiba">Curitiba</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Sobre o Animal</legend>
+                    <input type="radio" id="radio-Animal" name="Animal" value="Cachorro" checked required />
+                    <label for="radio-Animal">Cachorro</label>
+                    <input type="radio" id="radio-Animal" name="Animal" value="Gato" />
+                    <label for="radio-Animal">Gato</label>
+                    <input type="radio" id="radio-Animal" name="Animal" value="Passarinho" />
+                    <label for="radio-Animal">Passarinho</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="checkbox-denúncia" name="Denúncia" value="maus-tratos" />
+                    <label for="checkbox-denúncia">Maus-Tratos</label>
+                    <input type="checkbox" id="checkbox-denúncia" name="Denúncia" value="abandono" />
+                    <label for="checkbox-denúncia">Abandono</label>
+                    <br>
+                    <br>
+                    <input type="radio" id="radio-sexo" name="Sexo" value="fêmea" checked required />
+                    <label for="radio-sexo">Fêmea</label>
+                    <input type="radio" id="radio-sexo" name="Sexo" value="macho" />
+                    <label for="radio-sexo">Macho</label>
+                    <br>
+                    <br>
+                    <label>Escreva um pouco sobre o animal. Comportamentos, desde quando acontece o abuso, de que forma
+                        ele é tratado,<br> se está machucado e precisa de cuidados médicos, e se ele tem medo de
+                        humanos, de aproximação, se ele é dócil<br>ou arisco etc.</label> <br>
+                    <textarea name="01Sobre-o-animal" style="resize: none" required="yes" rows="5" cols="95"></textarea>
+                    <br>
+                    <br>
+                    <div class="Bim">
+                        <button type="submit">Enviar Formulário</button>
+                    </div>
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
