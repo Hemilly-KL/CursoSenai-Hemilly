@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício complementar</title>
+</head>
+<body>
+    <script>
+        function calcularJurosSimples(x,y,z){
+            var resultado = x*(y*z);
+            //document.write(resultado);
+            return resultado;
+            
+        }
+
+        var c = parseFloat(prompt('Digite aqui o Capital que você deseja investir: '));
+        var i = parseFloat(prompt('Digite aqui, em decimal (ex: 0.03), a taxa de juros sobre a qual você deseja investir: '));
+        var t = parseInt(prompt('Digite aqui o tempo que o dinheiro será investido: '));
+        calcularJurosSimples(c,i,t);
+        
+        
+        var juros = calcularJurosSimples(c,i,t);
+        document.write('Você receberá de juros depois desse tempo de investimento, ' + juros +' reais')
+    </script>
+</body>
+</html>
