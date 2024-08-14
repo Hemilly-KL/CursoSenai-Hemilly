@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .img {
+            float: left;
+            padding-left: 20px;
+            margin-right: 10px;
+
+        }
+
+        .recuo {
+            text-indent: 5px;
+        }
+        .Button {
+            border: none;
+            color: white;
+            background-color: #05668D;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: smaller;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="img">
+        <img src="Imagens/jpp.jfif" width="400px">
+    </div>
+    <div>
+
+        <header>
+            <h2>Já Pensou em adotar?</h2>
+            <p class="recuo">A adoção de animais é um ato de amor e responsabilidade que transforma vidas, tanto a do
+                animal
+                quanto a do adotante. Quando escolhemos adotar um animal de estimação, estamos oferecendo a ele uma
+                segunda
+                chance, um novo lar onde possa receber todo o carinho e cuidado que merece.</p>
+            <p class="recuo">Adotar um animal não é apenas um gesto de compaixão, mas também uma decisão que traz
+                inúmeros
+                benefícios para ambas as partes. O animal adotado ganha um lar amoroso, onde pode expressar sua
+                personalidade única, receber cuidados veterinários adequados e desfrutar de uma vida cheia de
+                brincadeiras e
+                afeto. Ao mesmo tempo, o adotante encontra um companheiro leal e fiel, que traz alegria e companhia para
+                seus dias.</p>
+            <p class="recuo">Além disso, a adoção de animais contribui para a redução do abandono e do sofrimento
+                animal. Ao
+                optar por adotar em vez de comprar um animal de estimação, estamos ajudando a diminuir o número de
+                animais
+                em abrigos e a combater o comércio ilegal e irresponsável de animais.</p>
+            <p class="recuo">Portanto, ao considerar a adoção de um animal, estamos não apenas enriquecendo nossas
+                próprias
+                vidas, mas também fazendo uma diferença positiva no mundo, proporcionando uma chance de felicidade a um
+                ser
+                que tanto precisa. Adotar é um gesto de amor que transforma vidas e cria laços que duram para sempre.
+            </p>
+        </header>
+        <h1> Requisitos para doação</h1>
+        <p> Caso esteja de acordo com os termos responda o formulário abaixo e aguarde nosso contato </p>
+        <p> Opa , parece que você se interessou em ter uma nova companhia ao seu lado...</p>
+
+        <form method="post" action="#">
+            <fieldset>
+                <legend><strong> Dados pessoais </strong></legend>
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="nome completo" required>
+                <label>Data de Nascimento</label>
+                <input type="date" name="data_nascimento" placeholder="dd/mm/aa" required>
+                <label>Telefone</label>
+                <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                <label> Email</label>
+                <input type="email" name="Email" placeholder="Insira seu melhor Email" required>
+                <br>
+                <br>
+                <label> Endereço </label>
+                <input type="text" name="Endereço" placeholder="Endereço completo" required>
+                <label> CEP</label>
+                <input type="text" name="CEP" placeholder="CEP" required>
+                <label> Profissão</label>
+                <input type="text" name="Profissão" placeholder=" Insira sua profissão" required>
+                <label> CPF</label>
+                <input type="text" name="CPF" placeholder="Insira seu CPF" required>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Sobre a Moradia </strong></legend>
+                <form action="#">
+                    <input type="checkbox" id="checkbox-moradia" name="Casa com portão[]" value="Automático" />
+                    <label for="checkbox-moradia"> Portão Automático</label>
+                    <input type="checkbox" id="checkbox-piscina" name="Casa com portão[]" value=“piscina" />
+                    <label for="checkbox-piscina"> Casa com piscina </label>
+                    <input type="checkbox" id="checkbox-telaproteção" name="Casa com portão[]" value=“tela de
+                        proteção" />
+                    <label for="checkbox-telaproteção"> Casa com tela de proteção </label>
+                    <input type="checkbox" id="checkbox-grades" name="Casa com portão[]" value=“Casa com grades" />
+                    <label for="checkbox-grades"> Portão com Grades </label>
+                </form>
+            </fieldset <br>
+            <br>
+            <legend>
+                <h2>Sobre o Animal</h2>
+            </legend>
+            <input type="radio" id="radio-Animal" name="Animal" value="Cachorro" checked required />
+            <label for="radio-Animal">Cachorro</label>
+            <input type="radio" id="radio-Animal" name="Animal" value="Gato" checked required />
+            <label for="radio-Animal">Gato</label>
+            <br>
+            <br>
+            <h3>Informe-nos sobre o motivo que levou você a adotar um animal</h3>
+            <form method="post" action="#">
+                <textarea name="sugestão" style="resize:none" required="yes" rows="7" cols="50"></textarea>
+                <br>
+                <br>
+            </form>
+            <!-- Aqui acaba o formulário e se inicia questões / perguntas -->
+        </fieldset>
+        <fieldset>
+                <br>
+                <legend><strong> O tempo médio de vida de um animal é de 15 anos ou mais. Você está pronto para este
+                        compromisso?</strong></legend>
+                <br>
+                <form action="#">
+                    <input type="radio" name="resposta" id="animal-sim" value="sim" checked required />
+                    <label for="animal-sim">Sim</label>
+                    <input type="radio" name="resposta" id="animal-nao" value="nao" />
+                    <label for="animal-nao">Não</label>
+                </form>
+                <br>
+                <!-- aqui começa o preencimento de dados - perguntas e respostas do usuário-->
+                <legend><strong> Você tem ciência de todos os custos que cães e gatos geram ao longo de sua vida, com
+                        alimentação, despesas veterinárias, limpeza, entre outros e afirma ter plenas condições de arcar
+                        com tais custos, além de entender que adotar um animal é uma decisão que não deve ser tomada por
+                        impulso e esse compromisso é pelo resto da vida dele? Esta pergunta é obrigatória</strong>
+                </legend>
+                <br>
+                <form action="#">
+                    <input type="radio" name="resposta" id="animal-sim" value="sim" checked required />
+                    <label for="animal-sim">Sim , eu concordo e aceito com os termos e responsabilidade pelo animal
+                    </label>
+                    <br>
+                    <input type="radio" name="resposta" id="animal-nao" value="nao" />
+                    <label for="animal-nao">Não, eu não concordo com os termos e sinto que ainda não esou apto para
+                        obter um animal</label>
+                    <br>
+                    <br>
+                </form>
+                <form>
+                <legend> <strong> Em caso de urgência, há possibilidades de levar o animal imediatamente à um veterinário?</strong></legend>
+                <br>
+                <form action="#">
+                    <input type="radio" name="resposta" id="animal-sim" value="sim" checked required />
+                    <label for="animal-sim">Sim</label>
+                    <input type="radio" name="resposta" id="animal-nao" value="nao" />
+                    <label for="animal-nao">Não</label>
+                </form>
+                <br>
+                <br>
+                <legend> <strong> Há outros animais em sua casa?</strong></legend>
+                <br>
+                <form action="#">
+                    <input type="radio" name="resposta" id="animal-sim" value="sim" checked required />
+                    <label for="animal-sim">Sim</label>
+                    <input type="radio" name="resposta" id="animal-nao" value="nao" />
+                    <label for="animal-nao">Não</label>
+                    <br>
+                    <br>
+                </form>
+                <br>
+                <form>
+                    <legend> <strong> Qual cliníca ou veterinário atende o(s) seu(s) animais? Se possível telefone / e-mail de contato da cliníca</strong></legend>
+                    <br>
+                    <form action="#">
+                        <input type="text" name="resposta" id="clinica-text" value="" checked required />
+                        <label for="clinica-text"></label>
+                    </form>
+                    <br>
+                    <br>
+        </fieldset>
+        <br>
+        <fieldset>
+                <legend><strong>Sobre sua Familía e Adoção</legend></strong>
+                <p>Todos estão de acordo com a adoção?</p>
+                <form action="#">
+                    <input type="radio" name="resposta" id="animal-sim" value="sim" checked required />
+                    <label for="animal-sim">Sim</label>
+                    <input type="radio" name="resposta" id="animal-nao" value="nao" />
+                    <label for="animal-nao">Não</label>
+                    <br>
+                </form>
+                <form>
+                    <br>
+                    <legend><strong> Quantas pessoas moram com você? </strong></legend>
+                    <br>
+                    <input type="number" name="quantidade" placeholder="quantidade de pessoas" required>
+                    <br>
+                    <br>
+                </form>
+                <form>
+                    <legend><strong> Existem crianças na casa ou próximas que frequentam a sua casa com frequência?
+                        </strong></legend>
+                    <input type="radio" name="resposta" id="animal-sim" value="sim" checked required />
+                    <label for="animal-sim">Sim</label>
+                    <input type="radio" name="resposta" id="animal-nao" value="nao" />
+                    <label for="animal-nao">Não</label>
+                    <br>
+                    <br>
+                </form>
+                <form>
+                <legend><strong> Qual a rotina da família?</strong></legend>
+                <input type="radio" name="resposta" id="Ocupada" value="sim" checked required />
+                <label for="animal-sim">Ocupada</label>
+                <input type="radio" name="resposta" id="tranquila" value="nao" />
+                <label for="animal-nao">Tranquila</label>
+                <input type="radio" name="resposta" id="meio termo" value="nao" />
+                <label for="animal-nao">Meio Termo</label>
+                <input type="radio" name="resposta" id="nao sei" value="nao" />
+                <label for="animal-nao">Não sei</label>
+                <br>
+                <br>
+        </form>
+        <form>
+            <legend><strong> Quanto tempo o animal ficará sozinho em média?</strong></legend>
+            <input type="radio" name="resposta" id="min" value="30" checked required />
+            <label for="temp">30 min</label>
+            <input type="radio" name="resposta" id="min" value="60" />
+            <label for="temp">60 min</label>
+            <input type="radio" name="resposta" id="min" value="3h" />
+            <label for="temp">3 horas </label>
+            <input type="radio" name="resposta" id="min" value="6h" />
+            <label for="temp">+6 horas</label>
+            <br>
+            <br>
+        </form>
+        <form>
+            <legend><strong> No caso de você morar com seus pais ou terceiros, todos estão cientes da adoção e concordam
+                    em receber um novo animal em casa?? </strong></legend>
+            <input type="radio" name="resposta" id="morarsim" value="sim" checked required />
+            <label for="morar-sim">Sim</label>
+            <input type="radio" name="resposta" id="morar-nao" value="nao" />
+            <label for="morar-nao">Não</label>
+            <br>
+            <br>
+        </form>
+        </fieldset>
+        <br>
+        <fieldset>
+        <h3> Sobre a Adoção</h3>
+        <p><em>Para quem você deseja doar o animal?</em></p>
+        <form action="#">
+            <input type="radio" name="resposta" id="animal-pmeuamigo" value="Para meu amigo" checked required />
+            <label for="animal-sim">Para meu amigo</label>
+            <input type="radio" name="resposta" id="animal-pmim" value="Para mim" />
+            <label for="animal-nao">Para mim</label>
+            <input type="radio" name="resposta" id="animal-nao" value="Para meu familiar" />
+            <label for="animal-pmeufamiliar">Familiar</label>
+            <br>
+        </form>
+        </fieldeset>
+        <br>
+
+        </section>
+        <br>
+        <div style="text-align: center;"><button type="submit" class="Button">Enviar dados</button></div>
+        <a href="AdoteUmPet.html" class="Button"><button class="Button">Voltar</button></a>
+        </main>
+        </section>
+ </body>
+    </html>
+        </fieldset>
+<br>
+</form>
+</section>
+</main>
+</div>
+</body>
+</html>

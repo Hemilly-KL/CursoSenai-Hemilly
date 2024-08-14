@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG ARCA</title>
+    <link rel="shortcut icon" href="Imagens/Icon Pata.png" type="image/x-icon">
+    <link rel="stylesheet" href="Estilo/Denúncias.css">
+    <style>
+        .espaço {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .Button {
+            border: none;
+            color: white;
+            background-color: #05668D;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="esq">
+            <img src="Imagens/Logo - Azul.png" height="70px">
+        </div>
+
+        <div class="tesfd">
+            <nav>
+                <ul>
+                    <li><a href="1Páginainicial.html">Página Inicial</a></li>
+                    <li><a href="Apoieacausa.html">Apoie essa Causa</a></li>
+                    <li><a href="AdoteUmPet.html">Adote um Pet</a></li>
+                    <li><a class="active" href="4Denúncias.html">Faça uma Denúncia</a></li>
+                    <li><a href="Voluntarios.html">Voluntários</a></li>
+                    <li><a href="6(0)NossoBlog.html">Nosso Blog</a></li>
+                    <li><a href="7QuemSomos.html">Quem Somos?</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="dir">
+            <form>
+                <input class="pesq" type="text" placeholder="Pesquisar...">
+                <button class="bot">OK</button>
+            </form>
+        </div>
+        <header>
+            <br>
+            <br>
+            <br>
+            <div class="espaço">
+                <h1>Por quê denunciar?</h1>
+                <p class="recuo">Denunciar casos de abandono e maus-tratos a animais é uma responsabilidade que todos
+                    devemos assumir. Além de ser uma questão moral e ética, é também uma forma de proteger os mais
+                    vulneráveis e garantir que recebam o cuidado e o respeito que merecem.</p>
+                <p class="recuo">Os animais são seres sencientes, capazes de sentir dor, medo e sofrimento, assim como
+                    nós humanos. Quando são abandonados ou submetidos a maus-tratos, enfrentam situações extremamente
+                    prejudiciais à sua saúde física e mental. Podem ficar desnutridos, feridos, doentes e até mesmo
+                    morrer em circunstâncias desumanas.</p>
+                <p class="recuo">Ao denunciar casos de abandono e maus-tratos, estamos dando voz aos animais que não
+                    podem falar por si mesmos. Estamos agindo em prol de sua segurança e bem-estar, garantindo que
+                    recebam assistência adequada e que os responsáveis por esses atos sejam responsabilizados por suas
+                    ações.</p>
+                <p class="recuo">Além disso, denunciar é uma forma de conscientizar a sociedade sobre a importância do
+                    respeito aos animais e do cumprimento das leis de proteção animal. É um passo crucial para promover
+                    uma cultura de empatia e compaixão em relação a todas as formas de vida.</p>
+                <p class="recuo">Portanto, se você testemunhou ou desconfia de casos de abandono ou maus-tratos a
+                    animais, preencha esse formulário com algumas informações suas e informações do animal. Sua ação
+                    pode salvar vidas e fazer a diferença no combate a essa forma de crueldade.</p>
+            </div>
+            <br>
+        </header>
+        <main class="Formulário">
+            <section>
+                <form method="post" action="#">
+                    <fieldset class="Fonte">
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome</label><br>
+                        <input type="text" name="Nome" placeholder="Digite seu nome" required>
+                        <br>
+                        <br>
+                        <label>Telefone</label>
+                        <input type="tel" name="Contato" placeholder="(XX) XXXXX-XXXX" required>
+                        <br>
+                        <br>
+                        <label>Sua Cidade</label>
+                        <select name="Cidade" required>
+                            <option value="">Escolha sua cidade</option>
+                            <optgroup label="São Paulo">
+                                <option value="Santa Cruz do Rio Pardo">Santa Cruz do Rio Pardo</option>
+                                <option value="Ourinhos">Ourinhos</option>
+                                <option value="São Pedro do Turvo">São Pedro do Turvo</option>
+                                <option value="Espírito Santo do Turvo">Espírito Santo do Turvo</option>
+                            </optgroup>
+                            <optgroup label="Paraná">
+                                <option value="Cornélio Procópio">Cornélio Procópio</option>
+                                <option value="Londrina">Londrina</option>
+                                <option value="Jacarezinho">Jacarezinho</option>
+                                <option value="Curitiba">Curitiba</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <fieldset class="Fonte">
+                        <legend>Sobre o Animal</legend>
+                        <input type="radio" id="radio-Animal" name="Animal" value="Cachorro" checked required />
+                        <label for="radio-Animal">Cachorro</label>
+                        <input type="radio" id="radio-Animal" name="Animal" value="Gato" />
+                        <label for="radio-Animal">Gato</label>
+                        <input type="radio" id="radio-Animal" name="Animal" value="Passarinho" />
+                        <label for="radio-Animal">Passarinho</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="checkbox-denúncia" name="Denúncia" value="maus-tratos" />
+                        <label for="checkbox-denúncia">Maus-Tratos</label>
+                        <input type="checkbox" id="checkbox-denúncia" name="Denúncia" value="abandono" />
+                        <label for="checkbox-denúncia">Abandono</label>
+                        <br>
+                        <br>
+                        <input type="radio" id="radio-sexo" name="Sexo" value="fêmea" checked required />
+                        <label for="radio-sexo">Fêmea</label>
+                        <input type="radio" id="radio-sexo" name="Sexo" value="macho" />
+                        <label for="radio-sexo">Macho</label>
+                        <br>
+                        <br>
+                        <label>Escreva um pouco sobre o animal. Comportamentos, desde quando acontece o abuso, de que
+                            forma ele é tratado, se está machucado e precisa de cuidados médicos, e se ele tem medo de
+                            humanos, de aproximação, se ele é dócil ou arisco etc.</label> <br>
+                        <textarea name="01Sobre-o-animal" style="resize: none" required="yes" rows="5"
+                            cols="99"></textarea>
+                    </fieldset>
+                    <br>
+                    <div class="Center">
+                        <button type="submit" class="Button">Enviar Formulário</button>
+            </section>
+        </main>
+        <br>
+        <footer style="font-size: small;">
+            <div class="contatos">
+                <h2><em>Contate-nos!</em></h2>
+                <p>Rod. Placido Lorenzetti, s/n - Paraíso, Santa Cruz do Rio Pardo - SP, 18900-000</p>
+                <p>(14) 99000-9090</p>
+                <h3><em>Siga-nos em nossas redes sociais!</em></h3>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Imagens/Instagram.svg" width="30"></a>
+                <p>@arca_ong</p>
+                <a href="https://www.facebook.com/"><img src="Imagens/Facebook.svg" width="30"></a>
+                <p>@ong_arca.ofc</p>
+            </div>
+
+            <div class="floatt">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7351.011576789634!2d-49.62200797507952!3d-22.89470799626939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715877263374!5m2!1spt-BR!2sbr"
+                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </footer>
+</body>
+
+</html>

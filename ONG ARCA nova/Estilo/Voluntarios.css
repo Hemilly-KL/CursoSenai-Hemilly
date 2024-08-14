@@ -1,0 +1,151 @@
+ /*Código da Navegação, encontrado em todos os CSS do site*/
+ body,
+ html {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: large;
+     background-color: #bdd6a1;
+     margin: 0;
+     padding: 0;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 12px 0px 0px 0px;
+     padding: 0;
+     overflow: hidden;
+     background-color: #87BE4B;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 12px;
+ }
+
+ li {
+     float: left;
+ }
+
+ li a {
+     font-size: 17px;
+     display: block;
+     color: #05668D;
+     text-align: center;
+     padding: 10px 12px;
+     text-decoration: none;
+
+ }
+
+ li a:hover {
+     color: aliceblue;
+ }
+
+ li a:hover:not(.active) {
+     color: #f5f6fa;
+     font-size: 18px;
+ }
+
+ .active {
+     color: #f5f6fa;
+     font-size: 18px;
+ }
+
+ main {
+     margin-left: 200px;
+     margin-right: 200px;
+     text-align: justify;
+ }
+
+ footer {
+     background-color: #87BE4B;
+     margin: 0;
+ }
+
+ .top1 {
+     /*fundo*/
+     background-color: #87BE4B;
+     height: 60px;
+     padding: 20px 0px 20px 0px;
+ }
+
+ .esq {
+     float: left;
+     margin: 0px;
+     margin-right: 50px;
+     margin-left: 30px;
+ }
+
+ .center {
+     text-align: right;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 40px;
+     float: left;
+     line-height: 60px;
+     font-size: 26px;
+     margin-right: 30px;
+     color: #000000;
+ }
+
+ .dir_redes {
+     float: right;
+     padding-top: 20px;
+     margin-right: 10px;
+ }
+
+ .dir {
+     width: 100px;
+     margin-top: 10px;
+     width: 250px;
+     float: right;
+ }
+
+ .pesq {
+     border-radius: 5px;
+     padding: 8px;
+     border: solid #05668D 3px;
+     background-color: #f5f6fa;
+     color: #8795a2;
+     width: 50%;
+     height: 20px;
+ }
+
+ .bot {
+     width: 40px;
+     height: 40px;
+     border: #05668D solid 3px;
+     border-radius: 8px;
+     margin-right: 50px;
+ }
+
+ .tesfd {
+     float: left;
+     width: 65%;
+ }
+
+ .clear {
+     clear: both;
+ }
+
+ .floatt {
+     float: left;
+     position: absolute;
+     margin-left: 900px;
+     margin-top: 25px;
+ }
+
+ .contatos {
+     margin-left: 200px;
+     float: left;
+     position: absolute;
+ }
+
+/*código específico da página Quem Somos*/
+
+.Button{
+  border: none;
+  color: white;
+  background-color: #05668D;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
