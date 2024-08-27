@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,87 +8,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="estilo.css" rel="stylesheet">
     <link href="form_estilo.css" rel="stylesheet">
+    <link href="formulário.css" rel="stylesheet">
     <link rel="shortcut icon" href="Imagens/Icon Pata.png" type="image/x-icon">
-    <style>
-        .botão {
-            display: block;
-            margin: auto;
-            background-color: #87BE4B;
-            font-size: large;
-            font-weight: bold;
-            margin: 0px 250px 0px 250px;
-            border: none;
-            box-shadow: none;
-        }
-
-        .botão:hover {
-            background-color: aliceblue;
-            color: #87BE4B;
-            border: none;
-            box-shadow: none;
-        }
-
-        .botão:disabled {
-            background-color: #cbe6af;
-            cursor: not-allowed;
-        }
-
-        input.nome::placeholder {
-            color: #98b0c5;
-        }
-
-        label.font {
-            font-weight: 600;
-            font-size: large;
-        }
-
-        /* Cor do  slider */
-        /* Estiliza o "thumb" (a bolinha) do input range */
-        input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            background:#87BE4B;
-            cursor: pointer;
-            border-radius: 50%;
-            border: 2px solid aliceblue;
-        }
-
-        input[type="range"]::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            background: #87BE4B;
-            cursor: pointer;
-            border-radius: 50%;
-            border: 2px solid aliceblue;
-        }
-
-        input[type="range"]::-ms-thumb {
-            width: 20px;
-            height: 20px;
-            background: #87BE4B;
-            cursor: pointer;
-            border-radius: 50%;
-            border: 2px solid aliceblue;
-        }
-
-        /* Estiliza a "track" (a barra) do input range */
-        input[type="range"] {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 100%;
-            background: linear-gradient(to right, #87BE4B 0%, aliceblue 0%);
-            height: 8px;
-            border-radius: 5px;
-            outline: none;
-            transition: background 0.3s;
-        }
-
-        input[type="range"]:focus {
-            outline: none;
-        }
-    </style>
     <title>Formulário de Adoção</title>
 
 </head>
@@ -118,113 +39,126 @@
                     acolher o novo
                     integrante.<br>Queremos descobrir um pouco sobre quem estará ao lado do nosso amiguinho!</h5>
             </div>
+            <div class="princ">
+                <div style="margin: 30px;">
+                    <form id="myform" action="adotar4.html" method="GET">
+                        <div>
+                            <br>
+                            <label class="font">Quantas pessoas moram na casa que o animal residirá?</label>
+                            <select class="form-control custom-input" id="exampleFormControlSelect1" required>
+                                <option disabled selected>Selecione uma opção</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10 ou mais</option>
+                            </select>
+                        </div>
 
-            <form id="myform" action="adotar4.html" method="GET">
-                <div>
-                    <label class="font">Quantas pessoas moram na casa que o animal residirá?</label>
-                    <select class="form-control custom-input" id="exampleFormControlSelect1" required>
-                        <option disabled selected>Selecione uma opção</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10 ou mais</option>
-                    </select>
+                        <br>
+
+                        <div>
+                            <label class="font">Existem crianças na casa ou próximas, que frequentam a sua casa com
+                                frequência?</label>
+                            <div style="margin-left: -20px;">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1" required>
+                                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2" required>
+                                    <label class="form-check-label" for="inlineRadio2">Não</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label class="font">Como é a rotina da família?</label>
+                            <br>
+                            <div style="margin-left: -25px;">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineOptions1"
+                                        id="muitotranquila" value="option1" required>
+                                    <label class="form-check-label" for="muitotranquila">Muito Tranquila</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineOptions1" id="tranquila"
+                                        value="option2" required>
+                                    <label class="form-check-label" for="tranquila">Tranquila</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineOptions1" id="agitada"
+                                        value="option3" required>
+                                    <label class="form-check-label" for="agitada">Agitada</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineOptions1" id="muitoagitada"
+                                        value="option4" required>
+                                    <label class="form-check-label" for="muitoagitada">Muito Agitada</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label class="font">Quanto tempo, em média, o animal vai ficar sozinho?</label>
+                            <br>
+                            <select class="form-control custom-input" id="exampleFormControlSelect1" required>
+                                <option disabled selected>Selecione uma opção</option>
+                                <option>Não vai ficar sozinho nunca</option>
+                                <option>Até 30min</option>
+                                <option>de 31min à 2h</option>
+                                <option>de 2h01 à 4h</option>
+                                <option>de 4h01 à 6h</option>
+                                <option>de 6h01 à 8h</option>
+                                <option>de 8h01 à 10h</option>
+                                <option>de 10h01 à 12h</option>
+                                <option>12h ou mais</option>
+                            </select>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label class="font">Todos na casa estão de acordo com a adoção do pet?</label> <br>
+                            <div style="margin-left: -20px;">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3"
+                                        value="option1" required>
+                                    <label class="form-check-label" for="inlineRadio3">Sim</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio4"
+                                        value="option2" required>
+                                    <label class="form-check-label" for="inlineRadio4">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <Button type="submit" class="nome btn btn-primary botão" id="prosseguir"
+                            disabled>Prosseguir</Button>
+                        <br>
+                    </form>
                 </div>
 
-                <br>
-
-                <div>
-                    <label class="font">Existem crianças na casa ou próximas, que frequentam a sua casa com
-                        frequência?</label>
-                    <div style="margin-left: -20px;">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1" required>
-                            <label class="form-check-label" for="inlineRadio1">Sim</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2" required>
-                            <label class="form-check-label" for="inlineRadio2">Não</label>
-                        </div>
-                    </div>
-
-                </div>
-
-                <br>
-
-                <div>
-                    <label class="font">Numa escala de "muito tranquila" à "muito ocupada", como é a rotina da
-                        família?</label>
-                    <br>
-                    <input type="range" class="form-control-range" id="formControlRange" style="width: 100%;" required>
-                    <div class="row" style="font-size: small;">
-                        <div class="col-lg-4">
-                            <span>muito tranquila</span>
-                        </div>
-
-                        <div class="col-lg-4" style="text-align: center;">
-                            <span>mediana</span>
-                        </div>
-
-                        <div class="col-lg-4" style="text-align: right;">
-                            <span>muito ocupada</span>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-                <div>
-                    <label class="font">Quanto tempo, em média, o animal vai ficar sozinho?</label>
-                    <br>
-                    <select class="form-control custom-input" id="exampleFormControlSelect1" required>
-                        <option disabled selected>Selecione uma opção</option>
-                        <option>Não vai ficar sozinho nunca</option>
-                        <option>Até 30min</option>
-                        <option>de 31min à 2h</option>
-                        <option>de 2h01 à 4h</option>
-                        <option>de 4h01 à 6h</option>
-                        <option>de 6h01 à 8h</option>
-                        <option>de 8h01 à 10h</option>
-                        <option>de 10h01 à 12h</option>
-                        <option>12h ou mais</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div>
-                    <label class="font">Todos na casa estão de acordo com a adoção do pet?</label> <br>
-                    <div style="margin-left: -20px;">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio3"
-                                value="option1" required>
-                            <label class="form-check-label" for="inlineRadio3">Sim</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio4"
-                                value="option2" required>
-                            <label class="form-check-label" for="inlineRadio4">Não</label>
-                        </div>
-                    </div>
-                </div>
-                <Button type="submit" class="nome btn btn-primary botão" id="prosseguir" disabled>Prosseguir</Button>
-            </form>
 
 
+            </div>
         </div>
-
     </main>
 
     <script>
-
         //para permitir continuar somente se todos os elementos estiverem preenchidos
         function checkform() {
             var form = document.getElementById('myform');
@@ -241,7 +175,7 @@
                     }
                 } else if (input.type === 'select-one') {
                     // Verifica se o select possui um valor selecionado
-                    if (input.value === '') {
+                    if (input.value === '' || input.value === 'Selecione uma opção') {
                         allFilled = false;
                     }
                 } else {
@@ -256,24 +190,11 @@
         }
 
         document.getElementById('myform').addEventListener('input', checkform);
-        //vai procurar no documento um elemento cujo id é 'formulário' e vai adicionar um ouvinte de eventos aos elementos 'input', para que ele realize uma ação assim que um evento ocorrer.
-        //nesse caso, o evento é a digitação de algo no input, com o 'checkform' o elemento vai verificar, conforme a ordem do script, se o input está preenchido
-
-        next.disabled = !allFilled;
-
-        if (allFilled) {
-            next.disabled = false;
-        } else {
-            next.disabled = true;
-        }
-
-        //a variável allFilled está definida como 'true', portanto, se ela estiver verdadeira, o botão vai ser ativado para ir para a próxima página. caso não o botão vai continuar desabilitado
 
         document.getElementById('myform').addEventListener('submit', function (event) {
             event.preventDefault();
             window.location.href = 'adotar4.html'; // Substitua pelo caminho da próxima página
         });
-
     </script>
 </body>
 

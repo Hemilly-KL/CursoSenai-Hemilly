@@ -1,13 +1,13 @@
 .margin {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: 500;
-    color: aliceblue;
+    color: black;
 }
 
 .custom-input {
-    background-color: #05668D;
-    color: aliceblue !important;
+    background-color: aliceblue;
+    color: black !important;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 4px;
@@ -15,8 +15,8 @@
 }
 
 .custom-input:focus {
-    background-color: #05668D;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: black;
     border: 1px solid #87BE4B;
     padding: 10px;
     border-radius: 4px;
@@ -124,4 +124,10 @@ input[type="checkbox"]:checked + label:after {
     top: 0;
     font-size: 18px;
     color: aliceblue; /* Cor do check */
+}
+
+label.font {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
