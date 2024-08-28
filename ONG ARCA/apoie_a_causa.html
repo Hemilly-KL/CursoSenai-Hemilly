@@ -30,6 +30,95 @@
         </symbol>
     </svg>
     <!--FIM CÓDIGO ÍCONES-->
+    <style>
+        .botãoD {
+            background-color: #87BE4B;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            display: block;
+            font-weight: bold;
+        }
+
+        .botãoD:hover {
+            background-color: #05668D;
+            color: aliceblue;
+        }
+
+        .costum-icon {
+            width: 9rem;
+            margin-top: -40px;
+            margin-left: -60px;
+
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-top: 15px;
+            margin-left: auto;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-top: -8px;
+        }
+
+        .parg {
+            text-align: center;
+            padding: 0rem 0.3rem 0.3rem 0.3rem;
+            font-weight: bold;
+            text-indent: 0;
+        }
+
+        .enviar {
+            display: block;
+            margin: auto;
+            background-color: #87BE4B;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            box-shadow: none;
+            transition: background-color 0.3s, color 0.3s;
+            /* Adiciona transição suave */
+        }
+
+        .enviar:hover,
+        .enviar:focus {
+            background-color: #05668D;
+            color: aliceblue;
+            border: none;
+            box-shadow: none;
+        }
+
+        .text-modal {
+            text-align: center;
+            text-indent: 0;
+        }
+
+        .t-modal {
+            font-size: 0.85rem;
+        }
+
+        .b-modal {
+            font-size: 1rem;
+        }
+
+        .valor {
+            font-size: 0.9rem;
+            margin-bottom: 0rem;
+            font-weight: bolder;
+        }
+
+        .dinheiro {
+            font-size: 1.3rem;
+            padding: 0.1rem;
+            padding-top: 0.2rem;
+            margin: 0rem 11rem 1rem 11rem;
+            border: #87BE4B 0.2rem solid;
+            border-radius: 0.6rem;
+            font-weight: bolder
+        }
+    </style>
     <title>ONG ARCA</title>
 </head>
 
@@ -52,9 +141,6 @@
                         <a class="nav-link" aria-current="page" href="adote.html">Adote</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Denuncie</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
                     </li>
                 </ul>
@@ -63,35 +149,284 @@
     </nav>
     <!--FIM MENU-->
 
+    <main>
+        <div style="background-color: #05668D;">
+            <br>
+            <div class="row" style="margin-left: 21%;">
+                <!--primeiro kit (kit de limpeza)-->
+                <div class="card col-xs-12 col-lg-3 m-5" style="width: 20rem;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="Imagens/Kit Limpeza.png" alt="Icon" class="costum-icon">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Kit Limpeza</h3>
+                            <h2>R$25,00</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="parg">Desinfetante a base de amônia quaternária para desinfecção das baias da
+                            internação.
+                        </p>
+                    </div>
+                    <div style="margin-top: -0.7rem; margin-bottom: 0.7rem;">
+                        <button type="button" class="btn btn-primary enviar" data-toggle="modal"
+                            data-target="#exampleModal" id="prosseguir">DOAR AGORA</button>
+                    </div>
+                    <div>
+                    </div>
+
+                    <!-- Modal do kit de limpeza (kit 1)-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="Imagens/Logo - Azul.png" alt="Logo" height="70"
+                                        class="d-inline-block align-text-top">
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-modal t-modal">Você está doando um <b>Kit Limpeza</b> para a
+                                        Associação de Cuidado e Resgate Animal</p>
+                                    <p class="text-modal valor">Valor a ser doado</p>
+                                    <p class="text-modal dinheiro">R$25,00</p>
+                                    <img src="Imagens/QR Code 25.jpg" width="300rem">
+                                    <br>
+                                    <p class="text-modal b-modal">Muito obrigado pela sua doação! Sua contribuição é
+                                        essencial para continuarmos nossa
+                                        missão de salvar, cuidar e dar um lar para nossos bichinhos. Agradecemos de
+                                        coração!
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn botãoD" data-dismiss="modal"
+                                        style="color: aliceblue;">Fechar janela</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DO PRIMEIRO KIT-->
+
+                <!--segundo kit (kit vacinação)-->
+                <div class="card col-xs-12 col-lg-3 m-5" style="width: 20rem;">
+                    <div class="row">
+                        <div class="col-lg-4 col-xs-4">
+                            <img src="Imagens/Kit Vacinação.png" alt="Icon" class="costum-icon">
+                        </div>
+                        <div class="col-lg-8 col-xs-8">
+                            <h3>Kit Vacinação</h3>
+                            <h2>R$40,00</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="parg">Vacinas para imunizar e tratar doenças dos cães e gatos que vêm para a ONG.
+                        </p>
+                    </div>
+                    <div style="margin-top: -0.7rem; margin-bottom: 0.7rem;">
+                        <button type="button" class="btn btn-primary enviar" data-toggle="modal"
+                            data-target="#exampleModal2" id="prosseguir">DOAR AGORA</button>
+                    </div>
+                    <div>
+                    </div>
+
+                    <!-- Modal do kit vacinação (kit 2)-->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="Imagens/Logo - Azul.png" alt="Logo" height="70"
+                                        class="d-inline-block align-text-top">
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-modal t-modal">Você está doando um <b>Kit Vacinação</b> para a
+                                        Associação de Cuidado e Resgate Animal</p>
+                                    <p class="text-modal valor">Valor a ser doado</p>
+                                    <p class="text-modal dinheiro">R$40,00</p>
+                                    <img src="Imagens/QR Code 25.jpg" width="300rem">
+                                    <br>
+                                    <p class="text-modal b-modal">Muito obrigado pela sua doação! Sua contribuição é
+                                        essencial para continuarmos nossa
+                                        missão de salvar, cuidar e dar um lar para nossos bichinhos. Agradecemos de
+                                        coração!
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn botãoD" data-dismiss="modal"
+                                        style="color: aliceblue;">Fechar janela</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DO SEGUNDO KIT-->
+            </div>
+
+            <div class="row" style="margin-left: 21%;">
+                <!--TERCEIRO kit (Kit atendimento)-->
+                <div class="card col-xs-12 col-lg-3 m-5" style="width: 20rem;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="Imagens/Kit Atendimento.png" alt="Icon" class="costum-icon">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Kit Consulta</h3>
+                            <h2>R$60,00</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="parg">Consulta e primeiros cuidados para cães e gatos de atendimento externo.
+                        </p>
+                    </div>
+                    <div style="margin-top: -0.7rem; margin-bottom: 0.7rem;">
+                        <button type="button" class="btn btn-primary enviar" data-toggle="modal"
+                            data-target="#exampleModal3" id="prosseguir">DOAR AGORA</button>
+                    </div>
+                    <div>
+                    </div>
+
+                    <!-- Modal do kit atendimento (kit 3)-->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="Imagens/Logo - Azul.png" alt="Logo" height="70"
+                                        class="d-inline-block align-text-top">
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-modal t-modal">Você está doando um <b>Kit Consulta</b> para a
+                                        Associação de Cuidado e Resgate Animal</p>
+                                    <p class="text-modal valor">Valor a ser doado</p>
+                                    <p class="text-modal dinheiro">R$60,00</p>
+                                    <img src="Imagens/QR Code 25.jpg" width="300rem">
+                                    <br>
+                                    <p class="text-modal b-modal">Muito obrigado pela sua doação! Sua contribuição é
+                                        essencial para continuarmos nossa
+                                        missão de salvar, cuidar e dar um lar para nossos bichinhos. Agradecemos de
+                                        coração!
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn botãoD" data-dismiss="modal"
+                                        style="color: aliceblue;">Fechar janela</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DO TERCEIRO KIT-->
+
+                <!--QUARTO kit (kit internação)-->
+                <div class="card col-xs-12 col-lg-3 m-5" style="width: 20rem;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="Imagens/Kit diária de internação.png" alt="Icon" class="costum-icon">
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Kit Internação</h3>
+                            <h2>R$100,00</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="parg">Soro, cateter para acesso, equipo
+                            esparadrapo e medicação diária.
+                        </p>
+                    </div>
+                    <div style="margin-top: -0.7rem; margin-bottom: 0.7rem;">
+                        <button type="button" class="btn btn-primary enviar" data-toggle="modal"
+                            data-target="#exampleModal4" id="prosseguir">DOAR AGORA</button>
+                    </div>
+                    <div>
+                    </div>
+
+                    <!-- Modal do kit internação (kit 4)-->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="Imagens/Logo - Azul.png" alt="Logo" height="70"
+                                        class="d-inline-block align-text-top">
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-modal t-modal">Você está doando um <b>Kit Internação</b> para a
+                                        Associação de Cuidado e Resgate Animal</p>
+                                    <p class="text-modal valor">Valor a ser doado</p>
+                                    <p class="text-modal dinheiro">R$100,00</p>
+                                    <img src="Imagens/QR Code 25.jpg" width="300rem">
+                                    <br>
+                                    <p class="text-modal b-modal">Muito obrigado pela sua doação! Sua contribuição é
+                                        essencial para continuarmos nossa
+                                        missão de salvar, cuidar e dar um lar para nossos bichinhos. Agradecemos de
+                                        coração!
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn botãoD" data-dismiss="modal"
+                                        style="color: aliceblue;">Fechar janela</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM DO QUARTO KIT-->
+            </div>
+        </div>
+
+        <div>
+            <img src="Imagens/Banner2 - Apoie a Causa.png" alt="Banner" width="100%">
+        </div>
+
+        <div>
+            <!--espaço para colocar o banner 'como é o nosso trabalho'-->
+        </div>
+
+        <div>
+            <img src="Imagens/Nossos patrocinadores.gif" width="100%">
+        </div>
+
+
+        </div>
+    </main>
+
 
     <!--INÍCIO FOOTER-->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-8 d-flex align-items-center">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-8 d-flex align-items-center">
 
-        <span class="mb-3 mb-md-0 text-muted">Rod. Placido Lorenzetti, s/n - Paraíso, Sta Cruz do R. Pardo - SP,
-          18900-000</span>
-        <br>
-      </div>
+                <span class="mb-3 mb-md-0 text-muted">Rod. Placido Lorenzetti, s/n - Paraíso, Sta Cruz do R. Pardo - SP,
+                    18900-000</span>
+                <br>
+            </div>
 
-      <div class="col-md-8 d-flex align-items-center">
+            <div class="col-md-8 d-flex align-items-center">
 
-        <span class="mb-3 mb-md-0 text-muted">(14)99000-9090</span>
-      </div>
+                <span class="mb-3 mb-md-0 text-muted">(14)99000-9090</span>
+            </div>
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted"
-            href="https://www.instagram.com/arca_ong/?utm_source=ig_web_button_share_sheet" target="_blank"><svg
-              class="bi" width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#" target="_blank"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook" />
-            </svg></a></li>
-      </ul>
-    </footer>
-  </div>
-  <!--FIM FOOTER-->
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted"
+                        href="https://www.instagram.com/arca_ong/?utm_source=ig_web_button_share_sheet"
+                        target="_blank"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#" target="_blank"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!--FIM FOOTER-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
